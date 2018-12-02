@@ -68,11 +68,11 @@ dependencies {
 	testImplementation('org.springframework.boot:spring-boot-starter-test')
 }
 ```
-compile(‘org.springframework.boot:spring-boot-starter-data-jpa') - помежет нам при работе с базой данных, содержит в себе так же и Hibernate.
-implementation(‘org.springframework.boot:spring-boot-starter-web') - даст нам использовать все возможност Tomcat и Spring MVC.
-compile(‘org.postgresql:postgresql') - даст возможность работать с PostgreSQL.
-compile(‘org.liquibase:liquibase-core') - с помощью этой зависимости мы упростим себе создание таблиц и написание миграй к базе данных.
-compile(‘org.projectlombok:lombok') -  упростит нам весь процесс создания аксессоров к приватным полям классов по средству аннотаций @Getter и @Setter. Для этого, предворительно загрузим lombok plugin в настройках приложения (Preferences > Plugins).
+`compile(‘org.springframework.boot:spring-boot-starter-data-jpa')` - помежет нам при работе с базой данных, содержит в себе так же и Hibernate.
+`implementation(‘org.springframework.boot:spring-boot-starter-web')` - даст нам использовать все возможност Tomcat и Spring MVC.
+`compile(‘org.postgresql:postgresql')` - даст возможность работать с PostgreSQL.
+`compile(‘org.liquibase:liquibase-core')` - с помощью этой зависимости мы упростим себе создание таблиц и написание миграй к базе данных.
+`compile(‘org.projectlombok:lombok')` -  упростит нам весь процесс создания аксессоров к приватным полям классов по средству аннотаций @Getter и @Setter. Для этого, предворительно загрузим lombok plugin в настройках приложения (Preferences > Plugins).
 
 После успешной установки плагина включим возможность пользоваться  данными аннотациями (Preferences > Build, Execution, Deployment > Annotation Processors) поставив флажок на против Enable annotation processing.
 
